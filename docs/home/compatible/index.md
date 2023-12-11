@@ -8,7 +8,7 @@
 
 [Element Plus](https://element-plus.gitee.io/zh-CN/guide/installation.html) 可以在支持 `ES2018` 和 `ResizeObserver` 的浏览器上运行。 如果您需要支持旧版本的浏览器，请添加 `Babel` 和相应的 `Polyfill`。
 
-| Edge >=88                                                                | Firefox >=78                                                                      | Chrome >=87                                                                    | Safari >=13                                                                    |
+| Edge >=88| Firefox >=78| Chrome >=87|Safari>=13                                                                    |
 | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
 | ![Edge](https://cdn.jsdelivr.net/npm/@browser-logos/edge/edge_32x32.png) | ![Firefox](https://cdn.jsdelivr.net/npm/@browser-logos/firefox/firefox_32x32.png) | ![Chrome](https://cdn.jsdelivr.net/npm/@browser-logos/chrome/chrome_32x32.png) | ![Safari](https://cdn.jsdelivr.net/npm/@browser-logos/safari/safari_32x32.png) |
 

@@ -1,4 +1,6 @@
+// 解析markdown转为HTML文件时，各种配置，例如：页面title，head,script,meta等
 import { defineConfig } from "vitepress";
+// 解析markdown转为HTML文件时，给特定标签添加特定属性和属性值
 import mdItCustomAttrs from "markdown-it-custom-attrs";
 
 /**
@@ -7,24 +9,19 @@ import mdItCustomAttrs from "markdown-it-custom-attrs";
  */
 export default defineConfig({
   head: [
-    [
-      "link",
-      { rel: "icon", href: "/vue-next-admin-doc-preview/images/favicon.ico" },
-    ],
+    ["link", { rel: "icon", href: "/vue-next-admin-doc-preview/images/favicon.ico" }],
     [
       "meta",
       {
         name: "keywords",
-        content:
-          "doc、vue-next-admin、vue-next-admin-doc、vue3、element-plus、vuejs/vue-next",
+        content: "doc、vue-next-admin、vue-next-admin-doc、vue3、element-plus、vuejs/vue-next",
       },
     ],
     [
       "meta",
       {
         name: "description",
-        content:
-          "🎉🎉🔥基于vue3.x 、Typescript、vite、Element plus等，适配手机、平板、pc 的后台开源免费模板库（vue2.x请切换vue-prev-admin分支）开发文档",
+        content: "🎉🎉🔥基于vue3.x 、Typescript、vite、Element plus等，适配手机、平板、pc 的后台开源免费模板库（vue2.x请切换vue-prev-admin分支）开发文档",
       },
     ],
     [
@@ -54,44 +51,54 @@ export default defineConfig({
     ],
   ],
   markdown: {
-    config: (md) => {
+    config: md => {
       md.use(mdItCustomAttrs, "image", {
         "data-fancybox": "gallery",
       });
     },
   },
   title: "vue-next-admin",
-  description:
-    "🎉🎉🔥基于vue3.x 、Typescript、vite、Element plus等，适配手机、平板、pc 的后台开源免费模板库（vue2.x请切换vue-prev-admin分支）开发文档",
+  description: "🎉🎉🔥基于vue3.x 、Typescript、vite、Element plus等，适配手机、平板、pc 的后台开源免费模板库（vue2.x请切换vue-prev-admin分支）开发文档",
   lang: "zh-CN",
+  // 基础baseUrl 类似publicPath
   base: "/vue-next-admin-doc-preview/",
+  // 是否显示更新时间
   lastUpdated: true,
+  // 全局页面配置
   themeConfig: {
+    // 是否显示logo
     logo: "/images/logo-mini.svg",
     search: true,
+    // 自定义右侧大纲标题
     outlineTitle: "导航目录",
+    // 开启大纲深层导航：1，1.1，1.2.1
     outline: "deep",
+    // 自定义更新text
     lastUpdatedText: "上次更新",
+    // 自定义底部编辑链接
     editLink: {
-      pattern:
-        "https://gitee.com/lyt-top/vue-next-admin-doc/edit/master/docs/:path",
+      pattern: "https://gitee.com/lyt-top/vue-next-admin-doc/edit/master/docs/:path",
       text: "欢迎到 Gitee 上编辑此页",
     },
     author: "lyt_20201208",
+    // 顶部搜索栏设置，使用了Algolia插件搜索，没有节流
     // algolia: {
     //   apiKey: "ef1d5913298c3b377842ab406af9cbf6",
     //   appId: "VZD7WV0OU8",
     //   indexName: "vue-next-admin-doc-preview",
     //   placeholder: "请输入内容...",
     // },
+    // 底部版权声明
     footer: {
       message: "根据 MIT 许可证发布",
       copyright: "本文档内容版权为 vue-next-admin 作者所有，保留所有权利。",
     },
+    // 自定义底部上下页跳转链接的文字
     docFooter: {
       prev: "上一页",
       next: "下一页",
     },
+    // 右上角导航配置
     nav: [
       { text: "指南", link: "/home/", activeMatch: "/home/" },
       { text: "配置", link: "/config/", activeMatch: "/config/" },
@@ -109,10 +116,6 @@ export default defineConfig({
           {
             text: "@甜蜜蜜 GoPro平台",
             link: "https://toscode.gitee.com/GionConnection/gopro_free",
-          },
-          {
-            text: "@甜蜜蜜 NiuPi 平台",
-            link: "https://gitee.com/GionConnection/niupi-free",
           },
           {
             text: "@游子 GFast-V3",
@@ -140,65 +143,8 @@ export default defineConfig({
           },
         ],
       },
-      {
-        text: "演示 & 仓库",
-        items: [
-          {
-            text: "⛱️ 线上演示",
-            items: [
-              {
-                text: "vue3.x 版本预览（vue-next-admin）",
-                link: "https://lyt-top.gitee.io/vue-next-admin-preview/#/login",
-              },
-              {
-                text: "vue2.x 版本预览（vue-prev-admin）",
-                link: "https://lyt-top.gitee.io/vue-prev-admin-preview/#/login",
-              },
-              {
-                text: "vue3 + uni-app 商城（vue-next-admin-shop）",
-                link: "https://lyt-top.gitee.io/vue-next-admin-shop-preview",
-              },
-            ],
-          },
-          {
-            text: "💒 代码仓库",
-            items: [
-              {
-                text: "gitee（国内：实时更新）",
-                link: "https://gitee.com/lyt-top/vue-next-admin",
-              },
-              {
-                text: "github（国外：定期更新）",
-                link: "https://github.com/lyt-Top/vue-next-admin",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        text: "日志 & 文档",
-        items: [
-          {
-            text: "更新日志",
-            link: "https://gitee.com/lyt-top/vue-next-admin/blob/master/CHANGELOG.md",
-          },
-          {
-            text: "文档仓库",
-            link: "https://gitee.com/lyt-top/vue-next-admin-doc",
-          },
-        ],
-      },
-      {
-        text: "合作 & 赞助",
-        link: "/support/",
-        activeMatch: "/support/",
-      },
-      {
-        text: "商城",
-        link: "/shop/",
-        activeMatch: "/shop/",
-      },
     ],
+    // 左侧导航栏配置：根据页面路由匹配，可分组
     sidebar: {
       "/home/": [
         {
@@ -267,28 +213,6 @@ export default defineConfig({
             { text: "内置插件的使用", link: "/config/builtPlug/" },
             { text: "其它问题", link: "/config/otherIssues/" },
           ],
-        },
-      ],
-      "/shop/": [
-        {
-          text: "首页",
-          collapsed: false,
-        },
-        {
-          text: "分类",
-          collapsed: false,
-        },
-        {
-          text: "服务",
-          collapsed: false,
-        },
-        {
-          text: "购物车",
-          collapsed: false,
-        },
-        {
-          text: "我的",
-          collapsed: false,
         },
       ],
     },
