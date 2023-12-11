@@ -3,13 +3,13 @@
 import { VPHomeSponsors } from "vitepress/theme";
 const data = [
   {
-    tier: "长期赞助商",
+    tier: "感谢vitepress",
     size: "big",
     items: [
       {
         name: "驰骋流程+表单+低代码",
         url: "http://www.ccflow.org/",
-        img: "/vue-next-admin-doc/images/logo-mini.svg",
+        img: "/vitepress/images/logo-mini.svg",
       },
     ],
   },
@@ -18,8 +18,8 @@ const data = [
 
 <template>
   <VPHomeSponsors
-    message="vueNextAdmin 是免费和开源的，由优秀的赞助商提供支持。"
-    action-text="查看指南"
+    message="vueNextAdmin是免费和开源的,感谢作者。"
+    action-text="查看使用指南"
     action-link="/home/"
     :data="data"
   />

@@ -10,12 +10,12 @@ const data = [
       {
         name: "驰骋流程+表单+低代码",
         url: "http://www.ccflow.org/",
-        img: "/vue-next-admin-doc/images/logo-mini.svg",
+        img: "/vitepress/images/logo-mini.svg",
       },
       {
         name: "驰骋流程+表单+低代码",
         url: "http://www.ccflow.org/",
-        img: "/vue-next-admin-doc/images/logo-mini.svg",
+        img: "/vitepress/images/logo-mini.svg",
       },
     ],
   },

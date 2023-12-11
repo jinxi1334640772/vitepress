@@ -9,19 +9,19 @@ import mdItCustomAttrs from "markdown-it-custom-attrs";
  */
 export default defineConfig({
   head: [
-    ["link", { rel: "icon", href: "/vue-next-admin-doc-preview/images/favicon.ico" }],
+    ["link", { rel: "icon", href: "/vitepress/images/favicon.ico" }],
     [
       "meta",
       {
         name: "keywords",
-        content: "doc、vue-next-admin、vue-next-admin-doc、vue3、element-plus、vuejs/vue-next",
+        content: "vitepress生成的静态站点、vue-next-admin、vue-next-admin-doc、vue3",
       },
     ],
     [
       "meta",
       {
         name: "description",
-        content: "🎉🎉🔥基于vue3.x 、Typescript、vite、Element plus等，适配手机、平板、pc 的后台开源免费模板库（vue2.x请切换vue-prev-admin分支）开发文档",
+        content: "🎉🎉🔥基于vitepress生成的静态网站，介绍vue-next-admin项目",
       },
     ],
     [
@@ -57,11 +57,11 @@ export default defineConfig({
       });
     },
   },
-  title: "vue-next-admin",
-  description: "🎉🎉🔥基于vue3.x 、Typescript、vite、Element plus等，适配手机、平板、pc 的后台开源免费模板库（vue2.x请切换vue-prev-admin分支）开发文档",
+  title: "vitepress",
+  description: "🎉🎉🔥基于vue3.x 、Typescript、vite、Element plus等，适配手机、平板、pc 的后台开发文档",
   lang: "zh-CN",
   // 基础baseUrl 类似publicPath
-  base: "/vue-next-admin-doc/",
+  base: "/vitepress/",
   // 是否显示更新时间
   lastUpdated: true,
   // 全局页面配置
@@ -77,10 +77,10 @@ export default defineConfig({
     lastUpdatedText: "上次更新",
     // 自定义底部编辑链接
     editLink: {
-      pattern: "https://gitee.com/lyt-top/vue-next-admin-doc/edit/master/docs/:path",
+      pattern: "https://gitee.com/myPrettyCode/vitepress/edit/master/docs/:path",
       text: "欢迎到 Gitee 上编辑此页",
     },
-    author: "lyt_20201208",
+    author: "原作者：lyt_20201208",
     // 顶部搜索栏设置，使用了Algolia插件搜索，没有节流
     // algolia: {
     //   apiKey: "ef1d5913298c3b377842ab406af9cbf6",
@@ -91,7 +91,7 @@ export default defineConfig({
     // 底部版权声明
     footer: {
       message: "根据 MIT 许可证发布",
-      copyright: "本文档内容版权为 vue-next-admin 作者所有，保留所有权利。",
+      copyright: "本文档内容版权为jinxizhang所有，保留所有权利。",
     },
     // 自定义底部上下页跳转链接的文字
     docFooter: {
