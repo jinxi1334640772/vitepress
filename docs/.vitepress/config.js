@@ -61,7 +61,7 @@ export default defineConfig({
   description: "🎉🎉🔥基于vue3.x 、Typescript、vite、Element plus等，适配手机、平板、pc 的后台开源免费模板库（vue2.x请切换vue-prev-admin分支）开发文档",
   lang: "zh-CN",
   // 基础baseUrl 类似publicPath
-  base: "/vue-next-admin-doc-preview/",
+  base: "/vue-next-admin-doc/",
   // 是否显示更新时间
   lastUpdated: true,
   // 全局页面配置

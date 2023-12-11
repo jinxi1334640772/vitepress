@@ -20,15 +20,9 @@
 	<p>&nbsp;</p>
 </div>
 
-#### 💝 长期赞助商
-
-<a href="http://www.ccflow.org/" target="_blank">
-<img src="./docs/public/images/ccflowRightNextAdmin.png" width="50%" height="70px" style="border-radius: 5px;">
-</a>
-
 #### 🌈 介绍
 
-基于 vue3.x 、Typescript、vite、Element plus 等，适配手机、平板、pc 的后台开源免费模板库开发文档
+基于vitepress的静态网站生成模板
 
 #### ⛱️ 线上预览
 
@@ -37,4 +31,4 @@
 #### 💒 代码仓库
 
 - vue3.x 版本 <a href="https://gitee.com/lyt-top/vue-next-admin" target="_blank">https://gitee.com/lyt-top/vue-next-admin</a>
-- vue2.x 版本 <a href="https://gitee.com/lyt-top/vue-next-admin/tree/vue-prev-admin" target="_blank">https://gitee.com/lyt-top/vue-next-admin/tree/vue-prev-admin</a>
+

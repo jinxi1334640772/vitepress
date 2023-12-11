@@ -4,14 +4,6 @@
 [vue-prev-admin](https://gitee.com/lyt-top/vue-next-admin/tree/vue-prev-admin/) vue2.x 的目录结构也会基于该结构进行修改
 :::
 
-## 长期赞助商
-
-vueNextAdmin 是免费和开源的，由优秀的赞助商提供支持 ❤️。
-
-<a href="http://www.ccflow.org/" target="_black" class="next-sponsors-item">
-  <img src="/images/ccflowRightNextAdmin.png" alt="驰骋流程+表单+低代码" title="驰骋流程+表单+低代码">
-</a>
-
 ## 目录结构图
 
 目录结构将 `定期更新`。树结构生成 cmd 输入 `tree` 或 `tree /f`

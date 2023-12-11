@@ -4,14 +4,6 @@
 项目切换分支后，`README.md` 文件内容都会不一样，请注意看 `README.md` 文件中的第一项 `介绍` 内容，会大概介绍当前分支是干啥的。
 :::
 
-## 长期赞助商
-
-vueNextAdmin 是免费和开源的，由优秀的赞助商提供支持 ❤️。
-
-<a href="http://www.ccflow.org/" target="_black" class="next-sponsors-item">
-  <img src="/images/ccflowRightNextAdmin.png" alt="驰骋流程+表单+低代码" title="驰骋流程+表单+低代码">
-</a>
-
 ## 项目介绍
 
 &emsp;&emsp;🎉🎉🔥 项目基于 [vue3.x](https://v3.cn.vuejs.org/) 、[Typescript](https://www.tslang.cn/docs/home.html)、[vite](https://vitejs.cn/)、[Element plus](https://element-plus.gitee.io/zh-CN/#/zh-CN) 等，适配手机、平板、pc 的后台开源免费模板库（[vue2.x](https://cn.vuejs.org/) 请切换 [vue-prev-admin](https://gitee.com/lyt-top/vue-next-admin/tree/vue-prev-admin/) 分支）。此项目永远免费用于学习研究，免费用于商业使用。

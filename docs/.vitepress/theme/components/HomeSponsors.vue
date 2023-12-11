@@ -9,7 +9,7 @@ const data = [
       {
         name: "驰骋流程+表单+低代码",
         url: "http://www.ccflow.org/",
-        img: "/vue-next-admin-doc-preview/images/ccflowRightNextAdmin.png",
+        img: "/vue-next-admin-doc/images/logo-mini.svg",
       },
     ],
   },
@@ -18,10 +18,9 @@ const data = [
 
 <template>
   <VPHomeSponsors
-    v-if="data"
     message="vueNextAdmin 是免费和开源的，由优秀的赞助商提供支持。"
-    action-text="查看更多"
-    action-link="/support/"
+    action-text="查看指南"
+    action-link="/home/"
     :data="data"
   />
 </template>
